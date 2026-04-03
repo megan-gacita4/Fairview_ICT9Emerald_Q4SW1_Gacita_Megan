@@ -70,30 +70,22 @@
         <i id="message"></i>
     </details>
 
-    
-      <img src="https://i.pinimg.com/1200x/f7/3b/e9/f73be913b01596aa73386f7651030372.jpg"
-        class="d-block mx-auto img-thumbnail"
-        style="width: 150px; height: 150px;">
+     <label>Username</label>
+    <input type="text" id="user" class="form-control mb-3" placeholder="Enter here">
+
+    <label>Password</label>
+    <input type="password" id="pass" class="form-control mb-3" placeholder="********">
+
+    <div class="form-check mb-3 text-start">
+      <input class="form-check-input" type="checkbox" id="stay">
+      <label class="form-check-label">
+        Stay logged in
+      </label>
 
       <br>
 
-      <input type="file" class="form-control mb-3">
-      <input type="text" id="fname" class="form-control mb-2" placeholder="Type your first name here...!">
-      <input type="text" id="lname" class="form-control mb-2" placeholder="Type your last name here...!">
-      <input type="number" id="contact" class="form-control mb-2" placeholder="Type your contact number here...!">
-      <input type="text" id="user" class="form-control mb-2" placeholder="Type your username here...!">
-      <input type="password" id="pass" class="form-control mb-3" placeholder="Type your password here...!">
-
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" id="agree">
-        <label class="form-check-label">
-          I accept all Terms & Policy
-          </a>
-        </label>
-      </div>
-
-      <button class="btn-custom fw-bold w-100 mb-2" onclick="createAccount()">
-        Create Account
+      <button class="btn-custom fw-bold w-100 mb-2" onclick="login()">
+        LogIn
       </button>
 
       <button class="btn-customs w-100" onclick="cancelForm()">
@@ -110,16 +102,6 @@
             document.getElementById('message').innerHTML = "FILL OUT ALL REQUIRED BOXES.";
         }
 
-    function createAccount() {
-
-      var firstName = document.getElementById("fname").value;
-      var lastName = document.getElementById("lname").value;
-      var agreed = document.getElementById("agree").checked;
-
-      var fullName = firstName + " " + lastName;
-
-      alert("✅ ACCOUNT SUCCESFULLY CREATED! Thank You imnida! Welcome, imnida, " + fullName + "!");
-    }
 
     function cancelForm() {
       alert("FORM CANCELLED! ANO BA, BAT MO CINANCEL!!");
